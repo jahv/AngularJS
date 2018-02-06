@@ -1,6 +1,10 @@
 <div class="card card-block">
-  <h4 class="card-title">{{data.setup}}</h4>
-  <p class="card-text" [hidden]="data.hide">{{data.punchline}}</p>
+  <h4 class="card-title">
+    <ng-content select="span"></ng-content>
+  </h4>
+  <p class="card-text" [hidden]="data.hide">
+    <ng-content select="h1"></ng-content>
+  </p>
   <a class="btn btn-warning" (click)="data.toggle()">Tell me</a>
   <a class="btn btn-danger" (click)="delete()">Delete</a>
 </div>

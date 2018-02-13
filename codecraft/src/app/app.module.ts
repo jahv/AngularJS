@@ -10,6 +10,7 @@ import { JokeListComponent } from './joke-list/joke-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
 import { CarouselAppComponent } from './carousel-app/carousel-app.component';
+import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
 
 
 @NgModule({
@@ -21,12 +22,13 @@ import { CarouselAppComponent } from './carousel-app/carousel-app.component';
     JokeListComponent,
     CarouselComponent,
     CarouselItemComponent,
-    CarouselAppComponent
+    CarouselAppComponent,
+    NgForExampleComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent]
+  bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent, NgForExampleComponent]
 })
 export class AppModule { }

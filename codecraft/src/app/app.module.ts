@@ -15,6 +15,7 @@ import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
 import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
 import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
+import { RecentArticlesComponent } from './recent-articles/recent-articles.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NgClassExampleComponent } from './ng-class-example/ng-class-example.com
     NgIfExampleComponent,
     NgSwitchExampleComponent,
     NgStyleExampleComponent,
-    NgClassExampleComponent
+    NgClassExampleComponent,
+    RecentArticlesComponent
   ],
   imports: [
     BrowserModule
@@ -39,6 +41,6 @@ import { NgClassExampleComponent } from './ng-class-example/ng-class-example.com
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
-    NgStyleExampleComponent, NgClassExampleComponent]
+    NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent]
 })
 export class AppModule { }

@@ -13,6 +13,8 @@ import { CarouselAppComponent } from './carousel-app/carousel-app.component';
 import { NgForExampleComponent } from './ng-for-example/ng-for-example.component';
 import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
+import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
+import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
 
 
 @NgModule({
@@ -27,13 +29,16 @@ import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.
     CarouselAppComponent,
     NgForExampleComponent,
     NgIfExampleComponent,
-    NgSwitchExampleComponent
+    NgSwitchExampleComponent,
+    NgStyleExampleComponent,
+    NgClassExampleComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
-    NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent]
+    NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
+    NgStyleExampleComponent, NgClassExampleComponent]
 })
 export class AppModule { }

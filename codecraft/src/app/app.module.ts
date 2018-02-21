@@ -16,6 +16,8 @@ import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.
 import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
 import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
 import { RecentArticlesComponent } from './recent-articles/recent-articles.component';
+import { CardHoverDirective } from './card-hover.directive';
+import { TryDirectivesComponent } from './try-directives/try-directives.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { RecentArticlesComponent } from './recent-articles/recent-articles.compo
     NgSwitchExampleComponent,
     NgStyleExampleComponent,
     NgClassExampleComponent,
-    RecentArticlesComponent
+    RecentArticlesComponent,
+    CardHoverDirective,
+    TryDirectivesComponent
   ],
   imports: [
     BrowserModule
@@ -41,6 +45,7 @@ import { RecentArticlesComponent } from './recent-articles/recent-articles.compo
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
-    NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent]
+    NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
+    TryDirectivesComponent]
 })
 export class AppModule { }

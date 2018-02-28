@@ -23,6 +23,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { DefaultPipe } from './default.pipe';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { CleanPipePipe } from './clean-pipe.pipe';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -47,15 +50,18 @@ import { CleanPipePipe } from './clean-pipe.pipe';
     PipesComponent,
     DefaultPipe,
     CustomPipesComponent,
-    CleanPipePipe
+    CleanPipePipe,
+    FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
     NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
-    TryDirectivesComponent, PipesComponent, CustomPipesComponent]
+    TryDirectivesComponent, PipesComponent, CustomPipesComponent, FormComponent]
 })
 export class AppModule { }

@@ -26,3 +26,12 @@
   </div>
 </form>
 <pre>{{myForm.value | json}}</pre>
+
+<pre>Email Dirty? {{ myForm.controls.email.dirty }}</pre>
+<pre>Email Pristine? {{ myForm.controls.email.pristine }}</pre>
+
+<pre>Email Touched? {{ myForm.controls.email.touched }}</pre>
+<pre>Email Untouched? {{ myForm.controls.email.untouched }}</pre>
+
+<pre>Email Valid? {{ myForm.controls.email.valid }}</pre>
+<pre>Email Invalid? {{ myForm.controls.email.invalid }}</pre>

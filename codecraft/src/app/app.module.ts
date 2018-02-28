@@ -20,6 +20,8 @@ import { CardHoverDirective } from './card-hover.directive';
 import { TryDirectivesComponent } from './try-directives/try-directives.component';
 import { CcRolloverDirective } from './cc-rollover.directive';
 import { PipesComponent } from './pipes/pipes.component';
+import { DefaultPipe } from './default.pipe';
+import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { PipesComponent } from './pipes/pipes.component';
     CardHoverDirective,
     TryDirectivesComponent,
     CcRolloverDirective,
-    PipesComponent
+    PipesComponent,
+    DefaultPipe,
+    CustomPipesComponent
   ],
   imports: [
     BrowserModule
@@ -50,6 +54,6 @@ import { PipesComponent } from './pipes/pipes.component';
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
     NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
-    TryDirectivesComponent, PipesComponent]
+    TryDirectivesComponent, PipesComponent, CustomPipesComponent]
 })
 export class AppModule { }

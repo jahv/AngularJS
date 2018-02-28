@@ -22,6 +22,7 @@ import { CcRolloverDirective } from './cc-rollover.directive';
 import { PipesComponent } from './pipes/pipes.component';
 import { DefaultPipe } from './default.pipe';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
+import { CleanPipePipe } from './clean-pipe.pipe';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
     CcRolloverDirective,
     PipesComponent,
     DefaultPipe,
-    CustomPipesComponent
+    CustomPipesComponent,
+    CleanPipePipe
   ],
   imports: [
     BrowserModule

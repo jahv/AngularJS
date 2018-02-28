@@ -4,6 +4,6 @@
     {{ j.setup }}
   </span>
   <h1>
-    {{ j.punchline }}
+    {{ j.punchline | clean : 'boo,damn,hell' }}
   </h1>
 </joke>

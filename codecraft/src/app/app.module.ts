@@ -18,6 +18,7 @@ import { NgClassExampleComponent } from './ng-class-example/ng-class-example.com
 import { RecentArticlesComponent } from './recent-articles/recent-articles.component';
 import { CardHoverDirective } from './card-hover.directive';
 import { TryDirectivesComponent } from './try-directives/try-directives.component';
+import { CcRolloverDirective } from './cc-rollover.directive';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { TryDirectivesComponent } from './try-directives/try-directives.componen
     NgClassExampleComponent,
     RecentArticlesComponent,
     CardHoverDirective,
-    TryDirectivesComponent
+    TryDirectivesComponent,
+    CcRolloverDirective
   ],
   imports: [
     BrowserModule

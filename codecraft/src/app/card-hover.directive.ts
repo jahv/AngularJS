@@ -14,7 +14,7 @@ export class CardHoverDirective {
   private ishovering: boolean;
 
   constructor(private el: ElementRef, private renderer: Renderer) {
-    console.log(el);
+    // console.log(el);
     // el.nativeElement.style.backgroundColor = "gray";
     renderer.setElementStyle(el.nativeElement, 'backgroundColor', 'gray');
   }

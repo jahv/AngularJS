@@ -19,6 +19,7 @@ import { RecentArticlesComponent } from './recent-articles/recent-articles.compo
 import { CardHoverDirective } from './card-hover.directive';
 import { TryDirectivesComponent } from './try-directives/try-directives.component';
 import { CcRolloverDirective } from './cc-rollover.directive';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CcRolloverDirective } from './cc-rollover.directive';
     RecentArticlesComponent,
     CardHoverDirective,
     TryDirectivesComponent,
-    CcRolloverDirective
+    CcRolloverDirective,
+    PipesComponent
   ],
   imports: [
     BrowserModule
@@ -48,6 +50,6 @@ import { CcRolloverDirective } from './cc-rollover.directive';
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
     NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
-    TryDirectivesComponent]
+    TryDirectivesComponent, PipesComponent]
 })
 export class AppModule { }

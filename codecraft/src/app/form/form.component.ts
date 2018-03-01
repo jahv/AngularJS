@@ -33,8 +33,16 @@ export class FormComponent implements OnInit {
         Validators.required,
         Validators.minLength(8)
       ]),
-      language: new FormControl()
+      language: new FormControl('')
     });
+  }
+
+  onSubmit() {
+    console.log(this.myForm);
+    if (this.myForm.valid) {
+      alert("Form Submitted!");
+      this.myForm.reset();
+    }
   }
 
 }

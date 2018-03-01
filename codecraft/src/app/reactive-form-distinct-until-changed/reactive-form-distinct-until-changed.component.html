@@ -1,0 +1,7 @@
+<input type="search" class="form-control"
+placeholder="Please enter search term distinct util change"
+[formControl]="searchField">
+<hr/>
+<ul>
+  <li *ngFor="let search of searches">{{ search }}</li>
+</ul>

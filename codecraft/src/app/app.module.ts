@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
+import "rxjs/Rx";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,8 +27,9 @@ import { DefaultPipe } from './default.pipe';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { CleanPipePipe } from './clean-pipe.pipe';
 import { FormComponent } from './form/form.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormDebounceTimeComponent } from './reactive-form-debounce-time/reactive-form-debounce-time.component';
+import { ReactiveFormDistinctUntilChangedComponent } from './reactive-form-distinct-until-changed/reactive-form-distinct-until-changed.component';
 
 
 @NgModule({
@@ -51,7 +55,10 @@ import { FormsModule } from '@angular/forms';
     DefaultPipe,
     CustomPipesComponent,
     CleanPipePipe,
-    FormComponent
+    FormComponent,
+    ReactiveFormComponent,
+    ReactiveFormDebounceTimeComponent,
+    ReactiveFormDistinctUntilChangedComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +69,7 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent, HeaderComponent, CarouselAppComponent,
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
     NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
-    TryDirectivesComponent, PipesComponent, CustomPipesComponent, FormComponent]
+    TryDirectivesComponent, PipesComponent, CustomPipesComponent, FormComponent,
+    ReactiveFormComponent, ReactiveFormDebounceTimeComponent, ReactiveFormDistinctUntilChangedComponent]
 })
 export class AppModule { }

@@ -8,6 +8,8 @@ import {FormsModule} from '@angular/forms';
 })
 export class TemplateDrivenFormComponent implements OnInit {
 
+  private emailX: string = "jahv.89@gmail.com";
+
   langs:string[] = [
         'English',
         'French',

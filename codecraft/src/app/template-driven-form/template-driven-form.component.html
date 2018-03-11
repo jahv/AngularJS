@@ -3,20 +3,20 @@
   <fieldset ngModelGroup="name">
     <div class="form-group">
       <label>First Name</label>
-      <input type="text" class="form-control" name="firstName" ngModel>
+      <input type="text" class="form-control" name="firstName" ngModel required>
     </div>
     <div class="form-group">
       <label>Last Name</label>
-      <input type="text" class="form-control" name="lastName" ngModel>
+      <input type="text" class="form-control" name="lastName" ngModel required>
     </div>
   </fieldset>
   <div class="form-group">
     <label>Email</label>
-    <input type="email" class="form-control" name="email" ngModel>
+    <input type="email" class="form-control" name="email" ngModel required pattern="[^ @]*@[^ @]*">
   </div>
   <div class="form-group">
     <label>Password</label>
-    <input type="password" class="form-control" name="password" ngModel>
+    <input type="password" class="form-control" name="password" ngModel required minlength="8">
   </div>
   <div class="form-group">
     <label>Language</label>
@@ -30,3 +30,10 @@
 </form>
 
 <pre>{{f.value | json}}</pre>
+
+<pre>Email Valid? {{f.form.controls.email?.valid}}</pre>
+<pre>Email Dirty? {{f.form.controls.email?.dirty}}</pre>
+<pre>Email Touched? {{f.form.controls.email?.touched}}</pre>
+
+<input type="email" class="form-control" name="emailX" [(ngModel)]="emailX">
+<pre>{{emailX}}</pre>

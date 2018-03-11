@@ -30,6 +30,7 @@ import { FormComponent } from './form/form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormDebounceTimeComponent } from './reactive-form-debounce-time/reactive-form-debounce-time.component';
 import { ReactiveFormDistinctUntilChangedComponent } from './reactive-form-distinct-until-changed/reactive-form-distinct-until-changed.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { ReactiveFormDistinctUntilChangedComponent } from './reactive-form-disti
     FormComponent,
     ReactiveFormComponent,
     ReactiveFormDebounceTimeComponent,
-    ReactiveFormDistinctUntilChangedComponent
+    ReactiveFormDistinctUntilChangedComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,7 @@ import { ReactiveFormDistinctUntilChangedComponent } from './reactive-form-disti
     NgForExampleComponent, NgIfExampleComponent, NgSwitchExampleComponent,
     NgStyleExampleComponent, NgClassExampleComponent, RecentArticlesComponent,
     TryDirectivesComponent, PipesComponent, CustomPipesComponent, FormComponent,
-    ReactiveFormComponent, ReactiveFormDebounceTimeComponent, ReactiveFormDistinctUntilChangedComponent]
+    ReactiveFormComponent, ReactiveFormDebounceTimeComponent,
+    ReactiveFormDistinctUntilChangedComponent, TemplateDrivenFormComponent]
 })
 export class AppModule { }

@@ -5,11 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SearchService } from './search.service';
+import { SearchComponent } from './search/search.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent,
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
